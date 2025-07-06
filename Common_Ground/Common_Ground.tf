@@ -23,6 +23,10 @@ module "aarushrg_test" {
   source = "F:\\Sumit_devOps\\Terraform\\Terraform_code\\Resource_segregation\\azurerm_resource_group"
 }
 
+module "aarushrg_test_101RG" {
+  source = "F:\\Sumit_devOps\\Terraform\\Terraform_code\\Resource_segregation\\azurerm_resource_group"
+}
+
 module "aarushsa_test" {
   depends_on = [module.aarushrg_test]
   source     = "F:\\Sumit_devOps\\Terraform\\Terraform_code\\Resource_segregation\\azurerm_storage_account"
